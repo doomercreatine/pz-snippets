@@ -2,6 +2,10 @@
 
 Simple extension that adds code snippets for Project Zomboid scripting. Mainly creating item and recipe scripts.
 
+## Installation
+
+Download the [latest release]. Then in VSCode navigate to extensions `CTRL + SHIFT + X` on Windows. Then at the top right of the Extensions panel select `...` -> `Install from VSIX...`. Select the file and verify it has installed. VSCode might need to be restarted for it to take effect.
+
 ## Features
 
 Supports Project Zomboid Script Support and ZedScript extensions. Automatically enables if workspace contains `media/scripts/` or `media/lua`
