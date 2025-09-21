@@ -1,0 +1,33 @@
+{
+  "name": "pz-snippets",
+  "displayName": "PZ-Snippets",
+  "description": "Code snippets for B42 Project Zomboid modding.",
+  "author": {
+    "name": "Baancho",
+    "url": "https://github.com/doomercreatine/pz-snippets"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "main": "./out/extension.js",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "plaintext",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "zed",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "pz-scripting",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

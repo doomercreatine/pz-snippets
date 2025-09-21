@@ -1,0 +1,112 @@
+{
+  // Skeleton for item and recipe scripts
+  "New Script": {
+    "prefix": ".new",
+    "body": [
+      "module ModName",
+      "{",
+      "\timports",
+      "\t{",
+      "\t\tBase",
+      "\t}",
+      "\t$0",
+      "}"
+    ],
+    "description": "Use when starting a new recipe file. Adds the module name and imports"
+  },
+  // Recipe block
+  "Recipe Definition": {
+    "prefix": ".recipe",
+    "body": [
+      "craftRecipe RecipeName$0",
+      "{",
+      "// https://pzwiki.net/wiki/CraftRecipe#craftRecipe_parameters",
+      "// REQUIRED",
+      "\ttags\t\t\t\t= ,",
+      "// RECOMMENDED",
+      "\ttime\t\t\t\t= ,",
+      "\tcategory\t\t\t= ,",
+      "\txpAward\t\t\t\t= ,",
+      "\ttimedAction\t\t\t= ,",
+      "// OPTIONAL",
+      "\t//needToBeLearn\t\t= ,",
+      "\t//AutoLearnAny\t\t= ,",
+      "\t//AutoLearnAll\t\t= ,",
+      "\t//MetaRecipe\t\t= ,",
+      "\t//AllowBatchCraft\t= ,",
+      "\t//Fluids\t\t\t= ,",
+      "\t//OnCreate\t\t\t= ,",
+      "\t//OnTest\t\t\t= ,",
+      "\t//ToolTip\t\t\t= ,",
+      "\t//Icon\t\t\t\t= ,",
+      "// REQUIRED",
+      "\tinputs",
+      "\t{",
+      "// Prop1 = equipped to primary",
+      "// Prop2 = equipped to secondary",
+      "\t// Kept Items",
+      "\t\titem 1 [] mode:keep flags[Prop1],",
+      "\t\t//item 1 [] mode:keep flags[],",
+      "\t// Consumed Items",
+      "\t\titem 1 [] flags[Prop2],",
+      "\t\t//item 1 [] flags[],",
+      "\t// If using itemMapper",
+      "\t\t// item 1 [] mappers[mapperID],",
+      "\t}",
+      "// RECOMMENDED",
+      "\toutputs",
+      "\t{",
+      "\t// You can leave outputs empty if you want to handle custom pass/fail logic using OnCreate function",
+      "\t\titem 1 []",
+      "\t// If using itemMapper",
+      "\t\t// item 1 mapper:mapperID,",
+      "\t}",
+      "// Optional",
+      "\t/*itemMapper mapperID",
+      "\t{",
+      "\t// You can define a recipe that takes several input types and picks the appropriate output type",
+      "\t\t<output item> = <input item>,",
+      "\t\t<output item> = <input item>,",
+      "\t\t...,",
+      "\t}*/",
+      "}"
+    ],
+    "description": "PZ Recipe Definition, just the recipe for multi-recipe files."
+  },
+
+  // Items
+  // Basic Item setup
+  "Item Definition": {
+    "prefix": ".item",
+    "body": [
+      "item ItemName$0",
+      "{",
+      "// REQUIRED",
+      "\tDisplayName = ,",
+      "\tDisplayCategory = ,",
+      "\tType = ,",
+      "\tWeight = ,",
+      "\tIcon = ,",
+      "}"
+    ]
+  },
+  // Fluid block
+  "Fluid Container": {
+    "prefix": ".fluidcontainer",
+    "body": [
+      "component FluidContainer",
+      "{",
+      "// REQUIRED",
+      "\tContainerName = $0,",
+      "\tcapacity = ,",
+      "// OPTIONAL",
+      "\tCustomDrinkSound = ,",
+      "\tRainFactor = ,",
+      "\tFluids",
+      "\t{",
+      "\t\tfluid =,",
+      "\t}",
+      "}"
+    ]
+  }
+}
