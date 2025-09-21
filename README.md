@@ -1,4 +1,4 @@
-# pz-snippets README
+# pz-snippets
 
 Simple extension that adds code snippets for Project Zomboid scripting. Mainly creating item and recipe scripts.
 
@@ -19,7 +19,7 @@ Report issues on [GitHub](https://github.com/doomercreatine/pz-snippets/issues)
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of pz-snippets
 
